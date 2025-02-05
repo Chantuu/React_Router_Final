@@ -1,0 +1,121 @@
+.reviewsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    margin-bottom: 123px;
+}
+
+.reviewsSection > h2 {
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: 700;
+    color: var(--main-color-black);
+}
+
+/* Arrows Container Styles */
+.arrowsContainer {
+    align-self: flex-end;
+}
+
+/* Review Cards Container Styles */
+.reviewCardsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Review Card Styles */
+.reviewCard {
+    border: 1px solid var(--ruler-div-color);
+    border-radius: 20px;
+
+    padding: var(--review-card-padding-y) var(--review-card-padding-x);
+}
+
+.reviewCard > p {
+    max-width: 330px;
+
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--paragraph-color-black);
+}
+
+/* Rating Styles */
+.reviewCardStars {
+    width: 130px;
+    margin-bottom: 15px;
+}
+
+.reviewCardStars > img {
+    width: 100%;
+    height: auto;
+}
+
+/* Author Name */
+.reviewAuthor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+
+    margin-bottom: 12px;
+}
+
+.reviewAuthor > span {
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--main-color-black);
+}
+
+@media only screen and (max-width: 890px) {
+    .reviewsSection {
+        gap: 24px;
+        position: relative;
+        margin-bottom: 200px;
+    }
+
+    .reviewsSection > h2 {
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: 900;
+    }
+
+    .arrowsContainer {
+        position: absolute;
+        top: 5%;
+    }
+
+    .reviewCardsContainer {
+        flex-direction: column;
+    }
+
+    .reviewCard {
+        padding: 24px;
+        display: none;
+    }
+
+    .reviewCardStars {
+        width: 120px;
+        margin-bottom: 12px;
+    }
+
+    .reviewAuthor {
+        margin-bottom: 8px;
+    }
+
+    .reviewAuthor > span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .reviewAuthor > img {
+        width: 20px;
+        height: auto;
+    }
+
+    .reviewCardsContainer > .reviewCard:first-of-type {
+        display: block;
+    }
+}
