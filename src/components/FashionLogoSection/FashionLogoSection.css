@@ -1,0 +1,35 @@
+.fashionLogoSection {
+    padding-top: var(--fashion-logo-section-padding-y);
+    padding-bottom: var(--fashion-logo-section-padding-y);
+
+    background-color: var(--main-color-black);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.fashionLogoSection > div {
+    height: 32px;
+}
+
+.fashionLogoSection > div > img {
+    width: auto;
+    height: 100%;
+}
+
+@media only screen and (max-width: 890px) {
+    .fashionLogoSection {
+        padding: 40px 16px;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fashionLogoSection > div {
+        height: 22px;
+    }
+}
