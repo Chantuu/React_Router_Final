@@ -1,7 +1,12 @@
 import React from 'react';
+import MainSection from '../../components/MainSection/MainSection';
 
 function HomePage() {
-    return <h1>HomePage</h1>;
+    return (
+        <>
+            <MainSection />
+        </>
+    );
 }
 
 export default HomePage;
