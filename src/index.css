@@ -246,3 +246,62 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+:root {
+    --main-color-black: #000000;
+    --paragraph-color-black: #00000099;
+    --main-color-white: #ffffff;
+    --placeholder-text-color: #00000066;
+    --ruler-div-color: #0000001a;
+    --dress-style-section-background-color: #f0f0f0;
+    --footer-background: #f0f0f0;
+
+    --banner-padding-y: 10px;
+    --banner-padding-mobile-y: 8px;
+    --header-padding-y: 24px;
+    --fashion-logo-section-padding-y: 42px;
+    --clothing-section-padding-y: 68px;
+
+    --card-style-section-margin-x: 7.944vw;
+    --card-style-section-padding-x: 64px;
+
+    --dress-style-card-padding-x: 36px;
+    --dress-style-card-padding-y: 25px;
+
+    --review-card-padding-x: 32px;
+    --review-card-padding-y: 28px;
+
+    --newsletter-padding-y: 43px;
+
+    font-family: 'Satoshi', sans-serif;
+}
+
+.container {
+    padding: 0 8.6%;
+}
+
+.ruler {
+    border: 0.5px solid var(--ruler-div-color);
+}
+
+.input {
+    border-radius: 62px;
+    padding: 16px 12px 16px 44px;
+    box-sizing: border-box;
+
+    background-position: 14px 11px;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+
+    border: none;
+}
+
+.input::placeholder {
+    font-size: 16px;
+    line-height: 21.6px;
+    color: var(--placeholder-text-color);
+}
+
+.mobileHeader {
+    display: none;
+}
