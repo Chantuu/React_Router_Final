@@ -1,0 +1,100 @@
+.dressStyleContainer {
+    margin-right: var(--card-style-section-margin-x);
+    margin-left: var(--card-style-section-margin-x);
+    margin-bottom: 112px;
+    margin-top: 112px;
+
+    padding: 70px var(--card-style-section-padding-x) 76px;
+
+    background-color: var(--dress-style-section-background-color);
+    gap: 64px;
+
+    border-radius: 40px;
+}
+
+.dressStyleContainer > h2 {
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: 700;
+    color: var(--main-color-black);
+
+    text-align: center;
+
+    margin-bottom: 64px;
+}
+
+/* Style Cards Container Styles */
+.styleCardContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+/* Style Card Styles */
+.styleCard {
+    height: 289px;
+    padding: var(--dress-style-card-padding-y) var(--dress-style-card-padding-y);
+
+    font-size: 36px;
+    line-height: 48.6px;
+    font-weight: 700;
+    color: var(--main-color-black);
+
+    overflow: hidden;
+    border-radius: 20px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+
+.styleCard:nth-of-type(1) {
+    grid-column: 1;
+
+    background-image: url('../../assets/dress_style_images/casual_style.png');
+}
+
+.styleCard:nth-of-type(2) {
+    grid-column-start: span 2;
+
+    background-image: url('../../assets/dress_style_images/formal_style.png');
+}
+
+.styleCard:nth-of-type(3) {
+    grid-column-start: span 2;
+
+    background-image: url('../../assets/dress_style_images/party_style.png');
+}
+
+.styleCard:nth-of-type(4) {
+    grid-column: 3;
+
+    background-image: url('../../assets/dress_style_images/gym_style.png');
+}
+
+@media only screen and (max-width: 890px) {
+    .dressStyleContainer {
+        margin: 50px 4.103vw;
+        padding: 40px 6.154vw 27px;
+    }
+
+    .dressStyleContainer > h2 {
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: 900;
+
+        margin-bottom: 28px;
+    }
+
+    .styleCardContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .styleCardContainer > .styleCard {
+        grid-column-start: unset;
+        height: 190px;
+
+        background-position: 60% 28%;
+    }
+}
