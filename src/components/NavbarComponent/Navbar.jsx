@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
-import Down_Arrow_Icon from '../../assets/icons/down_symbol.svg';
 
 function Navbar() {
     return (
@@ -8,17 +8,17 @@ function Navbar() {
             <header className="container header">
                 <span className="headerLogo">SHOP.CO</span>
                 <nav>
-                    <a href="#" className="navLink">
+                    <Link to="/" className="navLink">
                         <div className="navLinkContainer">
                             <span>Home</span>
                         </div>
-                    </a>
-                    <a href="#" className="navLink">
+                    </Link>
+                    <Link to="/" className="navLink">
                         New Arrivals
-                    </a>
-                    <a href="#" className="navLink">
+                    </Link>
+                    <Link to="/" className="navLink">
                         About
-                    </a>
+                    </Link>
                 </nav>
             </header>
         </>
