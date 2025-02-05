@@ -16,7 +16,7 @@ function Navbar() {
                     <Link to="/" className="navLink">
                         New Arrivals
                     </Link>
-                    <Link to="/" className="navLink">
+                    <Link to="/about" className="navLink">
                         About
                     </Link>
                 </nav>
