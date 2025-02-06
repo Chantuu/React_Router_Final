@@ -1,0 +1,31 @@
+.clothingSection {
+    padding-top: var(--clothing-section-padding-y);
+    padding-bottom: var(--clothing-section-padding-y);
+
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+}
+
+.clothingSection > h2 {
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65.71px;
+
+    text-align: center;
+}
+
+@media only screen and (max-width: 890px) {
+    .clothingSection {
+        padding-top: 50px;
+        padding-right: 0;
+    }
+
+    .clothingSection > h2 {
+        font-size: 32px;
+        line-height: 38.4px;
+
+        margin-bottom: 32px;
+    }
+}
