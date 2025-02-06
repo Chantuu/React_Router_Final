@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { default as axios } from 'axios';
 import './ClothingItems.css';
 import { p } from 'motion/react-client';
+import ClothingItem from '../ClothingItemComponent/ClothingItem';
 
 function ClothingItems() {
     const [responseData, setResponseData] = useState([]);
@@ -13,7 +14,7 @@ function ClothingItems() {
             setLoading(true);
             try {
                 const { data: response } = await axios.get(
-                    'https://fakestoreapi.com/products?limit=5'
+                    'https://fakestoreapi.com/products?limit=10'
                 );
                 setResponseData(response);
             } catch (e) {
@@ -32,7 +33,12 @@ function ClothingItems() {
             {!loading && !error && (
                 <>
                     {responseData.map((data) => (
-                        <p>{data.title}</p>
+                        <ClothingItem
+                            key={data.id}
+                            title={data.title}
+                            price={data.price}
+                            image={data.image}
+                        />
                     ))}
                 </>
             )}

@@ -1,0 +1,88 @@
+.clothingCard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    max-width: 268px;
+}
+
+.cardPhoto {
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 270px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cardPhoto > img {
+    height: 100%;
+    width: auto;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cardTitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--main-color-black);
+}
+
+.reviewContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+.reviewContainer > span {
+    font-size: 14px;
+    line-height: 18.9px;
+    font-weight: 400;
+    color: var(--main-color-black);
+}
+
+.reviewContainer > span > span {
+    color: var(--paragraph-color-black);
+}
+
+.cardPrice {
+    font-size: 24px;
+    line-height: 32.4px;
+    font-weight: 700;
+    color: var(--main-color-black);
+}
+
+@media only screen and (max-width: 890px) {
+    .cardPhoto {
+        max-height: 200px;
+    }
+
+    .cardContent {
+        gap: 4px;
+    }
+
+    .cardTitle {
+        font-size: 16px;
+        line-height: 21.6px;
+    }
+
+    .reviewContainer {
+        gap: 11px;
+    }
+
+    .reviewContainer > span {
+        font-size: 12px;
+        line-height: 16.2px;
+    }
+
+    .cardPrice {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
